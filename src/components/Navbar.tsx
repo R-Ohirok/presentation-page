@@ -1,0 +1,57 @@
+'use client';
+
+import Link from 'next/link';
+// import cn from 'classnames';
+import { useEffect } from 'react';
+import { X } from 'lucide-react';
+import { LinkType } from '@/types/LinkType';
+import { getLinkClass } from '@/utils/getLinkClass';
+
+type Props = {
+  onClose: () => void;
+  isOpen: boolean;
+  links: LinkType[];
+  activePage: string;
+};
+
+export default function Navbar({ onClose, isOpen, links, activePage }: Props) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isOpen]);
+
+  return (
+    <aside className="fixed z-10 h-dvh bg-gray-800 text-white top-0 bottom-0 left-0 right-0 p-4">
+      <div className="flex justify-end">
+        <button onClick={onClose} aria-label="Close" className="cursor-pointer">
+          <X />
+        </button>
+      </div>
+
+      <div>
+        <nav>
+          <ul className="flex flex-col gap-4 my-[30%]">
+            {links.map(({ href, label }) => (
+              <li key={href} className="self-center text-xl">
+                <Link
+                  href={href}
+                  onClick={onClose}
+                  className={getLinkClass({ activePage, href })}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </aside>
+  );
+}
