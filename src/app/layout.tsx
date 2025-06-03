@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/organisms/Header';
+import Footer from '@/components/organisms/Footer';
 
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -21,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} min-h-dvh flex flex-col`}>
+      <body className={`${roboto.variable} min-h-dvh flex flex-col bg-[url('/backgroundImg.jpg')] bg-auto`}>
         <Header />
 
-        <main className="flex-1 p-4 container m-auto">{children}</main>
+        <main className="flex-1 p-4 text-white">{children}</main>
 
         <Footer />
       </body>

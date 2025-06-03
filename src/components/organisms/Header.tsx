@@ -10,7 +10,7 @@ import { Menu } from 'lucide-react';
 
 const links: LinkType[] = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
+  { href: '/projects', label: 'Projects' },
   { href: '/contacts', label: 'Contacts' },
 ];
 
