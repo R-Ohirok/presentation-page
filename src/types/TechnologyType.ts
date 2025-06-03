@@ -1,4 +1,20 @@
-export type TechnologyType = {
-  name: string;
-  description: string;
-};
+export type TechnologyType =
+  | 'JavaScript'
+  | 'TypeScript'
+  | 'React'
+  | 'Redux Toolkit'
+  | 'HTML5'
+  | 'CSS3'
+  | 'SCSS'
+  | 'BEM'
+  | 'Fetch'
+  | 'REST API'
+  | 'Git'
+  | 'Vite'
+  | 'ESLint'
+  | 'Prettier'
+  | 'Next'
+  | 'Tailwind'
+  | 'Bulma'
+  | 'Radix UI'
+  | 'Swiper';

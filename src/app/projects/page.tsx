@@ -1,15 +1,22 @@
 import ProjectCard from '@/components/molecules/ProjectCard';
+import { ProjectType } from '@/types/ProjectType';
 
-const projects = [
+const projects: ProjectType[] = [
   {
     slug: 'phoneCatalog',
     image: '/main.png',
     name: 'Phone Catalog',
     info: 'А website specialising in the sale of gadgets. Various technologies were used, among which the main ones were React and Redux toolkit. The Atomic Design methodology was used. The ability to communicate with the server using the RESTful API and save data to local storage was implemented. The website is adapted for use on devices with different resolutions.',
     technologies: [
-      { name: 'HTML', description: 'for site structure' },
-      { name: 'CSS', description: 'for site design' },
-      { name: 'JS', description: 'for user interaction' },
+      {
+        name: 'HTML',
+        description: 'Defines the structure and content of web pages',
+      },
+      { name: 'CSS', description: 'Styles the appearance of web pages' },
+      {
+        name: 'JS',
+        description: 'Adds interactivity and dynamic behavior to websites',
+      },
     ],
   },
   {
@@ -18,9 +25,15 @@ const projects = [
     name: 'Phone Catalog',
     info: 'А website specialising in the sale of gadgets. Various technologies were used, among which the main ones were React and Redux toolkit. The Atomic Design methodology was used. The ability to communicate with the server using the RESTful API and save data to local storage was implemented. The website is adapted for use on devices with different resolutions.',
     technologies: [
-      { name: 'HTML', description: 'for site structure' },
-      { name: 'CSS', description: 'for site design' },
-      { name: 'JS', description: 'for user interaction' },
+      {
+        name: 'HTML',
+        description: 'Defines the structure and content of web pages',
+      },
+      { name: 'CSS', description: 'Styles the appearance of web pages' },
+      {
+        name: 'JS',
+        description: 'Adds interactivity and dynamic behavior to websites',
+      },
     ],
   },
   {
@@ -29,9 +42,15 @@ const projects = [
     name: 'Phone Catalog',
     info: 'А website specialising in the sale of gadgets. Various technologies were used, among which the main ones were React and Redux toolkit. The Atomic Design methodology was used. The ability to communicate with the server using the RESTful API and save data to local storage was implemented. The website is adapted for use on devices with different resolutions.',
     technologies: [
-      { name: 'HTML', description: 'for site structure' },
-      { name: 'CSS', description: 'for site design' },
-      { name: 'JS', description: 'for user interaction' },
+      {
+        name: 'HTML',
+        description: 'Defines the structure and content of web pages',
+      },
+      { name: 'CSS', description: 'Styles the appearance of web pages' },
+      {
+        name: 'JS',
+        description: 'Adds interactivity and dynamic behavior to websites',
+      },
     ],
   },
   {
@@ -40,9 +59,15 @@ const projects = [
     name: 'Phone Catalog',
     info: 'А website specialising in the sale of gadgets. Various technologies were used, among which the main ones were React and Redux toolkit. The Atomic Design methodology was used. The ability to communicate with the server using the RESTful API and save data to local storage was implemented. The website is adapted for use on devices with different resolutions.',
     technologies: [
-      { name: 'HTML', description: 'for site structure' },
-      { name: 'CSS', description: 'for site design' },
-      { name: 'JS', description: 'for user interaction' },
+      {
+        name: 'HTML',
+        description: 'Defines the structure and content of web pages',
+      },
+      { name: 'CSS', description: 'Styles the appearance of web pages' },
+      {
+        name: 'JS',
+        description: 'Adds interactivity and dynamic behavior to websites',
+      },
     ],
   },
 ];
