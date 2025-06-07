@@ -247,7 +247,7 @@ export const projectsDetails: projectsDetailsType[] = [
       },
     ],
     gitHub: 'https://github.com/R-Ohirok/todo-app',
-    demoLink: 'https://fascinating-youtiao-beb2a5.netlify.app/#/',
+    demoLink: 'https://todoapp-roman.netlify.app/',
   },
   {
     slug: 'presentationPage',
