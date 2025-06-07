@@ -7,6 +7,7 @@ export type TechnologyType =
   | 'CSS3'
   | 'SCSS'
   | 'BEM'
+  | 'React Router'
   | 'Fetch'
   | 'REST API'
   | 'Git'

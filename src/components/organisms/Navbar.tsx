@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-// import cn from 'classnames';
 import { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { LinkType } from '@/types/LinkType';

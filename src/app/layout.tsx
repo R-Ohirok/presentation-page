@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} min-h-dvh flex flex-col bg-[url('/backgroundImg.jpg')] bg-auto`}>
+      <body className={`${roboto.variable} h-dvh flex flex-col bg-[url('/backgroundImg.jpg')] bg-auto`}>
         <Header />
 
         <main className="flex-1 p-4 text-white">{children}</main>

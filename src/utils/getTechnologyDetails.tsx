@@ -1,6 +1,8 @@
 import { TechnologyDetailsType } from '@/types/TechnologyDetailsType';
 
-export const getTechnologyDetails = (techName: string): TechnologyDetailsType => {
+export const getTechnologyDetails = (
+  techName: string,
+): TechnologyDetailsType => {
   const normalized = techName
     .trim()
     .toLowerCase()
@@ -40,6 +42,11 @@ export const getTechnologyDetails = (techName: string): TechnologyDetailsType =>
     bem: {
       name: 'BEM',
       description: 'Provides a naming convention for writing maintainable CSS',
+    },
+    reactrouter: {
+      name: 'React Router',
+      description:
+        'Used for building multi-page applications and handling client-side routing',
     },
     fetch: {
       name: 'Fetch',

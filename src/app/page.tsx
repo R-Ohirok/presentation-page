@@ -1,6 +1,6 @@
 import Technology from '@/components/atoms/Technology';
 import ProjectCard from '@/components/molecules/ProjectCard';
-import { ProjectType } from '@/types/ProjectType';
+import { projects } from '@/data/projects';
 import { TechnologyType } from '@/types/TechnologyType';
 import { getTechnologyDetails } from '@/utils/getTechnologyDetails';
 
@@ -12,6 +12,7 @@ const technologies: TechnologyType[] = [
   'React',
   'Next',
   'Redux Toolkit',
+  'React Router',
   'Fetch',
   'REST API',
   'BEM',
@@ -25,24 +26,6 @@ const technologies: TechnologyType[] = [
   'ESLint',
   'Prettier',
 ];
-
-const project: ProjectType = {
-  slug: 'phoneCatalog',
-  image: '/main.png',
-  name: 'Phone Catalog',
-  info: 'А website specialising in the sale of gadgets. Various technologies were used, among which the main ones were React and Redux toolkit. The Atomic Design methodology was used. The ability to communicate with the server using the RESTful API and save data to local storage was implemented. The website is adapted for use on devices with different resolutions.',
-  technologies: [
-    {
-      name: 'HTML',
-      description: 'Defines the structure and content of web pages',
-    },
-    { name: 'CSS', description: 'Styles the appearance of web pages' },
-    {
-      name: 'JS',
-      description: 'Adds interactivity and dynamic behavior to websites',
-    },
-  ],
-};
 
 export default function Home() {
   return (
@@ -186,7 +169,7 @@ export default function Home() {
           <hr className="mt-2 border-t-2 border-gray-500 w-[100%] md:mb-2" />
         </div>
         <div className="m-auto">
-          <ProjectCard key={project.name} project={project} />
+          <ProjectCard key={projects[0].name} project={projects[0]} />
         </div>
       </section>
     </div>

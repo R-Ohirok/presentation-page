@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { LinkType } from '@/types/LinkType';
 import { getLinkClass } from '@/utils/getLinkClass';
-import Navbar from './Navbar';
+import Navbar from '@/components/organisms/Navbar';
 import { useState } from 'react';
 import { Menu } from 'lucide-react';
 
@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 bg-gray-800 lg:text-xl text-white p-4 flex justify-end sm:justify-start items-center">
+      <header className="sticky top-0 z-10 bg-gray-800 lg:text-xl text-white p-4 flex justify-end sm:justify-start items-center">
         <nav className="hidden sm:block space-x-4">
           {links.map(({ href, label }) => {
             return (

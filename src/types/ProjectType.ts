@@ -1,4 +1,4 @@
-import { TechnologyType } from './TechnologyDetailsType';
+import { TechnologyType } from '@/types/TechnologyType';
 
 export type ProjectType = {
   slug: string;
