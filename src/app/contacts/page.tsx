@@ -57,10 +57,10 @@ export default function ContactPage() {
               <Mail />
               <p>roman.ohirok.work@gmail.com</p>
             </a>
-            
           </div>
         </div>
       </div>
+
       <img
         src="/frontend.jpg"
         alt="frontend"

@@ -251,9 +251,14 @@ export const projectsDetails: projectsDetailsType[] = [
   },
   {
     slug: 'presentationPage',
-    images: ['/projectsImg/presentationPage/main.png'],
+    images: [
+      '/projectsImg/presentationPage/main.png',
+      '/projectsImg/presentationPage/projects.png',
+      '/projectsImg/presentationPage/projectDetails.png',
+      '/projectsImg/presentationPage/contacts.png',
+    ],
     name: 'Presentation Page',
-    info: 'A modern web-site for selling gadgets built with React + TypeScript, following the Atomic Design methodology.',
+    info: 'A personal portfolio website of a frontend developer, created to showcase skills, experience, and completed projects.',
     technologies: [
       'HTML5',
       'CSS3',
@@ -267,11 +272,50 @@ export const projectsDetails: projectsDetailsType[] = [
     ],
     description: [
       {
-        title: '',
+        title: 'Project Overview',
         text: [
-          'This is a modern e-commerce application built with a focus on component reusability and scalability.',
-          'The project features a clean user interface, dynamic product pages, persistent favorites and cart functionality, and interactive UI elements.',
-          'The app follows Atomic Design, breaking components down into atoms, molecules, organisms, templates, and pages — which promotes consistency and scalability.',
+          'This is a personal portfolio website of a frontend developer designed to showcase skills, experience, and completed projects.',
+          'The site is structured using reusable components and follows responsive design principles.',
+          'It includes separate pages for the homepage, projects, project details, and contacts.',
+        ],
+      },
+      {
+        title: 'Navigation & UI',
+        text: [
+          'Sticky navigation bar with active link highlighting.',
+          'Smooth scrolling across sections.',
+          'All buttons and interactive elements feature hover animations.',
+        ],
+      },
+      {
+        title: 'Home Page Features',
+        text: [
+          'Profile section with photo, title, and downloadable CV link.',
+          '“About Me” section describes background, skills, and technologies used.',
+          'Showcase of technologies in a styled tag-like layout.',
+          'Contains information about the last completed project.',
+        ],
+      },
+      {
+        title: 'Projects Page',
+        text: [
+          'Displays a list of completed projects with preview cards.',
+          'Each card links to a detailed project view.',
+        ],
+      },
+      {
+        title: 'Project Details Page',
+        text: [
+          'Route format: /projects/:projectId.',
+          'Contains extended information about the selected project.',
+          'Includes technologies used, key features, and links (e.g. GitHub, live demo).',
+        ],
+      },
+      {
+        title: 'Contacts Page',
+        text: [
+          'Features a contact form with fields for name, email, and message.',
+          'Includes links to social media (e.g. Telegram, LinkedIn, GitHub).',
         ],
       },
     ],
