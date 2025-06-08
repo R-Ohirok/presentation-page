@@ -20,8 +20,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-10 bg-gray-800 lg:text-xl text-white p-4 flex justify-end sm:justify-start items-center">
-        <nav className="hidden sm:block space-x-4">
+      <header className="sticky top-0 z-10 flex items-center justify-end bg-gray-800 p-4 text-white sm:justify-start lg:text-xl">
+        <nav className="hidden space-x-4 sm:block">
           {links.map(({ href, label }) => {
             return (
               <Link
@@ -36,7 +36,7 @@ export default function Header() {
         </nav>
         <button
           onClick={() => setIsMenuOpen(true)}
-          className="block sm:hidden cursor-pointer"
+          className="block cursor-pointer sm:hidden"
         >
           <Menu />
         </button>

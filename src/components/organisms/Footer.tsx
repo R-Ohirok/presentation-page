@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white text-center p-4 mt-8">
+    <footer className="mt-8 bg-gray-800 p-4 text-center text-white">
       <p>Created by Roman Ohirok</p>
     </footer>
   );

@@ -16,10 +16,10 @@ export default async function ProjectDetailPage({
   const project = getProjectBySlug(slug);
 
   return (
-    <div className="p-3 md:p-6 max-w-5xl mx-auto">
+    <div className="mx-auto max-w-5xl p-3 md:p-6">
       {project ? (
-        <div className="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8 bg-stone-800 rounded-lg p-4 md:p-6 lg:p-8">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-2 md:mb-4 lg:mb-6">
+        <div className="flex flex-col gap-y-4 rounded-lg bg-stone-800 p-4 md:gap-y-6 md:p-6 lg:gap-y-8 lg:p-8">
+          <h1 className="mb-2 text-5xl font-bold md:mb-4 lg:mb-6 lg:text-6xl">
             {project.name}
           </h1>
 
@@ -29,15 +29,15 @@ export default async function ProjectDetailPage({
 
           <section className="flex flex-col gap-y-1 md:gap-y-2 lg:gap-y-4">
             <div>
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
+              <h2 className="text-xl font-bold md:text-3xl lg:text-4xl">
                 About
               </h2>
-              <hr className="mt-2 border-t-2 border-gray-500 w-[100%] md:mb-2" />
+              <hr className="mt-2 w-[100%] border-t-2 border-gray-500 md:mb-2" />
             </div>
 
             {project.description.map(section => (
               <div key={section.title} className="mb-1 md:mb-2 lg:mb-4">
-                <h4 className="text-lg md:text-xl underline font-bold mb-1 md:mb-2">
+                <h4 className="mb-1 text-lg font-bold underline md:mb-2 md:text-xl">
                   {section.title}
                 </h4>
 
@@ -54,10 +54,10 @@ export default async function ProjectDetailPage({
 
           <section className="flex flex-col gap-y-2 md:gap-y-3 lg:gap-y-4">
             <div>
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
+              <h2 className="text-xl font-bold md:text-3xl lg:text-4xl">
                 Technologies used
               </h2>
-              <hr className="mt-2 border-t-2 border-gray-500 w-[100%] md:mb-2" />
+              <hr className="mt-2 w-[100%] border-t-2 border-gray-500 md:mb-2" />
             </div>
 
             <div className="flex flex-wrap gap-2">
@@ -72,17 +72,17 @@ export default async function ProjectDetailPage({
 
           <section className="flex flex-col gap-y-1 md:gap-y-2 lg:gap-y-4">
             <div>
-              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold">
+              <h2 className="text-xl font-bold md:text-3xl lg:text-4xl">
                 Links
               </h2>
-              <hr className="mt-2 border-t-2 border-gray-500 w-[100%] md:mb-2" />
+              <hr className="mt-2 w-[100%] border-t-2 border-gray-500 md:mb-2" />
             </div>
             <div className="flex gap-2 md:gap-4 lg:gap-6">
               <Link
                 href={project.gitHub}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative md:text-lg lg:text-xl text-gray-300 after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-gray-300 after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-0 after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full md:text-lg lg:text-xl"
               >
                 GitHub
               </Link>
@@ -91,7 +91,7 @@ export default async function ProjectDetailPage({
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative md:text-lg lg:text-xl text-gray-300 after:block after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-gray-300 after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-0 after:bg-gray-300 after:transition-all after:duration-300 hover:after:w-full md:text-lg lg:text-xl"
               >
                 Demo
               </Link>

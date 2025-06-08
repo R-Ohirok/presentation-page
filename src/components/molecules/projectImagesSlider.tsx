@@ -21,7 +21,7 @@ export default function ProductImageSlider({ images }: Props) {
         spaceBetween={10}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[Thumbs]}
-        className="w-full hover:scale-105 transition duration-300"
+        className="w-full transition duration-300 hover:scale-105"
       >
         {images.map((img, idx) => (
           <SwiperSlide key={idx}>
@@ -47,12 +47,12 @@ export default function ProductImageSlider({ images }: Props) {
           {images.map((img, idx) => (
             <SwiperSlide
               key={idx}
-              className="!w-[120px] flex justify-center items-center"
+              className="flex !w-[120px] items-center justify-center"
             >
               <img
                 src={img}
                 alt={`thumb-${idx}`}
-                className="w-[100px] aspect-auto border border-gray-700 hover:border-white cursor-pointer"
+                className="aspect-auto w-[100px] cursor-pointer border border-gray-700 hover:border-white"
               />
             </SwiperSlide>
           ))}
