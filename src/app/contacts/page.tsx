@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -41,12 +41,23 @@ export default function ContactPage() {
             </a>
 
             <a
+              href="https://t.me/RomanOIT03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition duration-300 hover:text-blue-500"
+            >
+              <Send />
+              <p>Telegram</p>
+            </a>
+
+            <a
               href="mailto:roman.ohirok.work@gmail.com"
               className="flex items-center gap-2 transition duration-300 hover:text-blue-500"
             >
               <Mail />
               <p>roman.ohirok.work@gmail.com</p>
             </a>
+            
           </div>
         </div>
       </div>
