@@ -3,6 +3,8 @@ import ProjectCard from '@/components/molecules/ProjectCard';
 import { projects } from '@/data/projects';
 import { TechnologyType } from '@/types/TechnologyType';
 import { getTechnologyDetails } from '@/utils/getTechnologyDetails';
+import { Download } from 'lucide-react';
+
 
 const technologies: TechnologyType[] = [
   'HTML5',
@@ -43,9 +45,17 @@ export default function Home() {
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
             Roman Ohirok
           </h1>
-          <h2 className="text-xl md:text-3xl lg:text-4xl text-gray-300 mt-2">
+          <h2 className="text-xl md:text-3xl lg:text-4xl text-gray-300 mt-2 mb-1 md:mb-2">
             Frontend developer
           </h2>
+          <a
+            href="/files/CV-Roman_Ohirok-FE_developer.pdf"
+            download
+            className="flex items-center gap-2 text-gray-300 hover:text-blue-500 transition duration-300"
+          >
+            <Download />
+            <p>Download CV</p>
+          </a>
         </div>
       </div>
 

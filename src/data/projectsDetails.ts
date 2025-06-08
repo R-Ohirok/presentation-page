@@ -275,7 +275,7 @@ export const projectsDetails: projectsDetailsType[] = [
         ],
       },
     ],
-    gitHub: 'https://github.com/div-ine-Coders/product_catalog',
-    demoLink: 'https://produtcatalog.netlify.app/#/',
+    gitHub: 'https://github.com/R-Ohirok/presentation-page',
+    demoLink: 'https://presentation-page-roman-ohirok.netlify.app/',
   },
 ];
